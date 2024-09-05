@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    
+    <Style x:Key="navigation_button_selected" TargetType="Border">
+        <Setter Property="Stroke" Value="Transparent"/>
+        <Setter Property="StrokeShape" Value="RoundRectangle 5"/>
+        <Setter Property="BackgroundColor" Value="#6bcaba"/>
+        <Setter Property="HeightRequest" Value="30"/>
+        <Setter Property="WidthRequest" Value="150"/>
+    </Style>
+    <Color x:Key="sucafina_secondary">#6bcaba</Color>
+    <Color x:Key="sucafina_danger">#f76336</Color>
+    <Style x:Key="navigation_button" TargetType="Border">
+        <Setter Property="Stroke" Value="Transparent"/>
+        <Setter Property="StrokeShape" Value="RoundRectangle 5"/>
+        <Setter Property="BackgroundColor" Value="#007680"/>
+        <Setter Property="HeightRequest" Value="40"/>
+        <Setter Property="WidthRequest" Value="150"/>
+    </Style>
+
+    <Style x:Key="navigation_text" TargetType="Label">
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="HorizontalOptions" Value="Start"/>
+
+    </Style>
+
+
+    <Style x:Key="stats_summary" TargetType="Border">
+        <Setter Property="HeightRequest" Value="150"/>
+        <Setter Property="StrokeShape" Value="RoundRectangle 10"/>
+        <Setter Property="WidthRequest" Value="300"/>
+
+    </Style>
+
+    <Style x:Key="header_text" TargetType="Label">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+
+    </Style>
+
+    <Style x:Key="extra_large_text" TargetType="Label">
+        <Setter Property="FontSize" Value="29"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+    </Style>
+
+    <Style x:Key="regular_text" TargetType="Label">
+        <Setter Property="FontSize" Value="19"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+    </Style>
+
+    <Style x:Key="small_text" TargetType="Label">
+        <Setter Property="FontSize" Value="13"/>
+    </Style>
+
+</ResourceDictionary>

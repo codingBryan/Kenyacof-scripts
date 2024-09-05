@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels ="clr-namespace:sucafina.Viewmodels"
+             x:DataType="viewmodels:Mainviewmodel"
+             BackgroundColor="White"
+             x:Class="sucafina.Views.Warehousing"
+             Title="Warehousing">
+    <Grid ColumnDefinitions="200, *">
+        <Grid Background="#007680" RowDefinitions=".15*,*,.5*">
+            <Border HorizontalOptions="CenterAndExpand" Stroke="Transparent" VerticalOptions="Start">
+                <Image Source="white_logo.png" WidthRequest="100" HeightRequest="65"/>
+            </Border>
+            <VerticalStackLayout Padding="0,50" Grid.Row="1">
+                <Border Style="{StaticResource navigation_button}">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GotoDashboardCommand}"/>
+                    </Border.GestureRecognizers>
+                    <Grid ColumnDefinitions=".25*,*">
+                        <Label Grid.Column="1" Style="{StaticResource navigation_text}" Text="Dashboard"/>
+                    </Grid>
+                </Border>
+
+                <Border Style="{StaticResource navigation_button}">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GotoShipmentsCommand}"/>
+                    </Border.GestureRecognizers>
+                    <Grid ColumnDefinitions=".25*,*">
+                        <Label Grid.Column="1" Style="{StaticResource navigation_text}" Text="Shipments"/>
+                    </Grid>
+                </Border>
+
+                <Border Style="{StaticResource navigation_button}">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GotoClientsCommand}"/>
+                    </Border.GestureRecognizers>
+                    <Grid ColumnDefinitions=".25*,*">
+                        <Label Grid.Column="1" Style="{StaticResource navigation_text}" Text="Clients"/>
+                    </Grid>
+                </Border>
+                <BoxView HeightRequest="1" Margin="5, 0"/>
+
+                <Border Style="{StaticResource navigation_button}">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GotoReportsCommand}"/>
+                    </Border.GestureRecognizers>
+                    <Grid ColumnDefinitions=".25*,*">
+                        <Label Grid.Column="1" Style="{StaticResource navigation_text}" Text="Analytics"/>
+                    </Grid>
+                </Border>
+
+                <Border Style="{StaticResource navigation_button_selected}">
+                    <Grid ColumnDefinitions=".25*,*">
+                        <Label Grid.Column="1" Style="{StaticResource navigation_text}" Text="Warehousing"/>
+                    </Grid>
+                </Border>
+            </VerticalStackLayout>
+
+
+            <Label Grid.Row="2" Text="powered by Ace inc." FontSize="11" HorizontalOptions="End" VerticalOptions="End" Margin="5"/>
+
+
+        </Grid>
+        <VerticalStackLayout Grid.Column="1" Padding="10">
+            <Label Text="Warehousing" VerticalOptions="Start" HorizontalOptions="Start" TextColor="Black" Margin="10" Style="{StaticResource SubHeadline}"/>
+            
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
